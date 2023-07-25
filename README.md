@@ -7,7 +7,8 @@ Moments to Midnight is our submission to the  <a href="https://itch.io/jam/ssjna
 Here you will find the release date source code for the game, releases, concept art, screenshots, etc. 
 
 >**Note**
->Only the pre-alpha release as submitted for the 2023 Summer Game Jam: Narrative is being shared on GitHub for all to view and read. Subsequent updates will not be available here and will only be available on our official Itch.io page and platform store fronts. We decided to release the source code as submitted for the game jam to enable more players to access and learn about the process.
+>
+> Only the pre-alpha release as submitted for the 2023 Summer Game Jam: Narrative is being shared on GitHub for all to view and read. Subsequent updates will not be available here and will only be available on our official Itch.io page and platform store fronts. We decided to release the source code as submitted for the game jam to enable more players to access and learn about the process.
 
 
 # Releases
