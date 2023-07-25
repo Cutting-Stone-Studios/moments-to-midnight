@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://uwgjqiklcajf"
+path="res://.godot/imported/doug1.dialogue-4c242d3e26bfbc8231a328bd7d0e596b.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/doug/doug1.dialogue"
+dest_files=["res://.godot/imported/doug1.dialogue-4c242d3e26bfbc8231a328bd7d0e596b.tres"]
+
+[params]
+
+defaults=true

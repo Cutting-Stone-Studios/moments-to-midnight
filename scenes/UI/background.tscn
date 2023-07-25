@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bagdt44pf71sk"]
+
+[ext_resource type="Texture2D" uid="uid://cgfo4kiw40v67" path="res://assets/images/UI/UI_Background.png" id="1_lk4c2"]
+[ext_resource type="Texture2D" uid="uid://crw6irule407t" path="res://assets/images/UI/UI_Frame.png" id="2_3bcgn"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UiBackground" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_lk4c2")
+
+[node name="UiFrame" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_3bcgn")

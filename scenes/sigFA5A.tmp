@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfs5mpthsujif"]
+
+[ext_resource type="Script" path="res://scripts/sign/sign.gd" id="1_cvf67"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3swkx"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_cvf67")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 22.0
+offset_top = 6.0
+offset_right = 47.0
+offset_bottom = 369.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_3swkx")
+
+[node name="path_1" type="Button" parent="."]
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 22.0
+offset_bottom = 37.0
+text = "1"
+
+[node name="path_2" type="Button" parent="."]
+offset_left = 47.0
+offset_top = 38.0
+offset_right = 65.0
+offset_bottom = 69.0
+text = "2"
+
+[node name="path_3" type="Button" parent="."]
+offset_left = 4.0
+offset_top = 69.0
+offset_right = 22.0
+offset_bottom = 100.0
+text = "3"

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://suokbq60u2gl"
+path="res://.godot/imported/Greg2.dialogue-aea4fc48868b63cb720ad1aab7816e3f.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/Greg2.dialogue"
+dest_files=["res://.godot/imported/Greg2.dialogue-aea4fc48868b63cb720ad1aab7816e3f.tres"]
+
+[params]
+
+defaults=true

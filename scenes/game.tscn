@@ -1,0 +1,81 @@
+[gd_scene load_steps=11 format=3 uid="uid://x0784wg0y76g"]
+
+[ext_resource type="Shader" path="res://shaders/vignette.gdshader" id="1_6wwe7"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_nublw"]
+[ext_resource type="PackedScene" uid="uid://c3otowa4utlc6" path="res://scenes/UI/ui.tscn" id="3_5qgbh"]
+[ext_resource type="PackedScene" uid="uid://bagdt44pf71sk" path="res://scenes/UI/background.tscn" id="3_tfh7p"]
+[ext_resource type="Texture2D" uid="uid://cwx2m5syqkq71" path="res://assets/Dialogue Screen/Dialogue_Screen_Background.png" id="5_w750o"]
+[ext_resource type="AudioStream" uid="uid://bl30t6ai3cwx2" path="res://assets/sound/music/song1.wav" id="6_2i1s2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_foj42"]
+shader = ExtResource("1_6wwe7")
+shader_parameter/size = 200.0
+
+[sub_resource type="Animation" id="Animation_okgbw"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_80lch"]
+resource_name = "dissolve"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1.6245),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lltmr"]
+_data = {
+"RESET": SubResource("Animation_okgbw"),
+"dissolve": SubResource("Animation_80lch")
+}
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("UI")]
+material = SubResource("ShaderMaterial_foj42")
+script = ExtResource("1_nublw")
+UI = NodePath("UI")
+
+[node name="background" parent="." instance=ExtResource("3_tfh7p")]
+
+[node name="UI" parent="." instance=ExtResource("3_5qgbh")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../ColorRect")
+libraries = {
+"": SubResource("AnimationLibrary_lltmr")
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+top_level = true
+z_index = 11
+offset_right = 1919.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0.811765, 0.635294, 0.984314, 1)
+
+[node name="DialogueScreenBackground" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("5_w750o")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_2i1s2")
+volume_db = -17.183
+autoplay = true

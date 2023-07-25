@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cckckxqo5eqqm"]
+
+[ext_resource type="Script" path="res://scripts/menu/main/main_menu.gd" id="1_m5hm6"]
+[ext_resource type="Texture2D" uid="uid://b7dsopujr736w" path="res://assets/images/scenes/Title_Screen.png" id="2_n57fv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t6ptx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7l2rw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.890196, 0.733333, 0.952941, 1)
+border_blend = true
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("1_m5hm6")
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_n57fv")
+
+[node name="Sign" type="Button" parent="."]
+layout_mode = 0
+offset_left = 778.0
+offset_top = 673.0
+offset_right = 1106.0
+offset_bottom = 734.0
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t6ptx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7l2rw")

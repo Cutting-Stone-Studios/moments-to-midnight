@@ -1,0 +1,11 @@
+~ doug_day1_map
+
+Doug: Hm.. I wonder what I'll do today.
+- Let's go to the Town Center!
+	Doug: Town center? Why?
+	- Because!
+		Doug: Sure, okay!
+		=> END
+- Let's go home!
+Doug: Ok
+=> END 

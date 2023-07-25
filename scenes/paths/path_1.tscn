@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://botynux6dq4h6"]
+
+[ext_resource type="Script" path="res://scripts/paths/path_1.gd" id="1_uahq7"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_uahq7")
+
+[node name="Talk" type="Button" parent="."]
+offset_left = 739.0
+offset_top = 502.0
+offset_right = 799.0
+offset_bottom = 544.0
+text = "talk
+"
+
+[node name="Interact" type="Button" parent="."]
+offset_left = 869.0
+offset_top = 502.0
+offset_right = 938.0
+offset_bottom = 541.0
+text = "interact"

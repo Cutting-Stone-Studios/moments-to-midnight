@@ -1,0 +1,33 @@
+{
+	"entity_name" : "Doug",
+	"interaction_points" : 0,
+	
+	"0" : {
+		"npc_dialogue" : [
+			"Hello, friend",
+			0,
+			"Do you have a piss fetish?",
+			1
+		],
+		"responses" : {
+			
+			"0" : [["What's up?", 1], ["Leave me alone.", -1]],
+			"1" : [["Of course I do!", 2], ["Yes", 1]] 
+		}
+	},
+
+	"1" : {
+		"npc_dialogue" : [
+			"aaaaaaaaa",
+			"hello",
+			0,
+			"hsfghfghfdghdfghdfghdfgh",
+			1
+		],
+		"responses" : {
+			"0" : [["What's up?", 1], ["Leave me alone.", -1]],
+			"1" : [["Of course I do!", 2], ["Yes", 1]] 
+		}
+	}
+
+}

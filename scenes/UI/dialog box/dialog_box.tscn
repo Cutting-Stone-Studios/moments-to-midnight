@@ -1,0 +1,110 @@
+[gd_scene load_steps=11 format=3 uid="uid://beivdckgymva"]
+
+[ext_resource type="Texture2D" uid="uid://cw6pre72152fi" path="res://assets/images/UI/UI_DialogueBox.png" id="1_uklnt"]
+[ext_resource type="Script" path="res://scenes/UI/dialog box/TextBox.gd" id="2_6ptx0"]
+[ext_resource type="FontFile" uid="uid://bf01w547i4x4j" path="res://assets/images/UI/Regular.TTF" id="3_oxb07"]
+[ext_resource type="FontFile" uid="uid://by1mj6av1aiwd" path="res://assets/images/UI/Bold.TTF" id="4_a376d"]
+[ext_resource type="Texture2D" uid="uid://cwx2m5syqkq71" path="res://assets/Dialogue Screen/Dialogue_Screen_Background.png" id="5_mkfrh"]
+[ext_resource type="Texture2D" uid="uid://dsw6721602cop" path="res://assets/Dialogue Screen/Dialogue_Screen_Box.png" id="6_2gycg"]
+[ext_resource type="Texture2D" uid="uid://dlldcnen5a1aq" path="res://assets/Character Sprites/Large/Greg.png" id="7_67d5c"]
+[ext_resource type="Texture2D" uid="uid://btpaykn8k6i" path="res://assets/Character Sprites/Large/Eustace.png" id="7_qo0yq"]
+[ext_resource type="Texture2D" uid="uid://3xmqxqqruk4o" path="res://assets/Character Sprites/Large/Doug.png" id="8_8x0t1"]
+[ext_resource type="Texture2D" uid="uid://db6mofh4vmuey" path="res://assets/Character Sprites/Large/Sef.png" id="8_kbpks"]
+
+[node name="Dialog Box" type="Control" node_paths=PackedStringArray("text_box", "buttons", "name_label")]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -931.5
+offset_top = -332.0
+offset_right = 931.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+tooltip_text = "dfgfhfgh"
+script = ExtResource("2_6ptx0")
+text_box = NodePath("TextBox")
+text_speed = 10
+buttons = NodePath("button_container")
+name_label = NodePath("Name")
+metadata/_edit_vertical_guides_ = [625.0, 111.0, 1920.0]
+metadata/_edit_horizontal_guides_ = [813.52]
+
+[node name="UiDialogueBox" type="Sprite2D" parent="."]
+position = Vector2(-28.5, -748)
+texture = ExtResource("1_uklnt")
+centered = false
+
+[node name="DialogueScreenBackground" type="Sprite2D" parent="."]
+position = Vector2(930.99, -208.003)
+texture = ExtResource("5_mkfrh")
+
+[node name="character" type="Sprite2D" parent="."]
+position = Vector2(0, -367)
+
+[node name="Greg" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1517.84, -365.902)
+scale = Vector2(0.439588, 0.450459)
+texture = ExtResource("7_67d5c")
+flip_h = true
+
+[node name="Doug" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(366.355, -365.688)
+scale = Vector2(1.8089, 1.8089)
+texture = ExtResource("8_8x0t1")
+
+[node name="Sef" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1508.88, -365.373)
+scale = Vector2(0.451298, 0.451298)
+texture = ExtResource("8_kbpks")
+flip_h = true
+
+[node name="Eustace" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1506.65, -363.997)
+scale = Vector2(1.80836, 1.80836)
+texture = ExtResource("7_qo0yq")
+flip_h = true
+
+[node name="DialogueScreenBox" type="Sprite2D" parent="."]
+position = Vector2(932.083, -208.503)
+texture = ExtResource("6_2gycg")
+
+[node name="TextBox" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 65.0
+offset_right = 1786.0
+offset_bottom = 266.0
+theme_override_fonts/normal_font = ExtResource("3_oxb07")
+theme_override_font_sizes/normal_font_size = 25
+scroll_active = false
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 83.846
+offset_top = 15.782
+offset_right = 228.846
+offset_bottom = 83.782
+theme_override_fonts/font = ExtResource("4_a376d")
+theme_override_font_sizes/font_size = 25
+
+[node name="button_container" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 0.5
+offset_top = 240.0
+offset_right = 0.5
+offset_bottom = -73.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 28

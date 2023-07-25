@@ -1,0 +1,5 @@
+~ closing_time
+: Thanks for playing our demo! Please check back in soon, as we'll be adding lots of updates!
+: Take care! :)
+do Global.close_game = true
+=> END

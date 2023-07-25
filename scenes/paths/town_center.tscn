@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://c6sjsewo7jlqn"]
+
+[ext_resource type="Script" path="res://scripts/paths/town_center.gd" id="1_bxb24"]
+[ext_resource type="Texture2D" uid="uid://t2a403oneh6m" path="res://assets/images/scenes/Town_center.png" id="1_h5cp1"]
+
+[sub_resource type="Theme" id="Theme_cpcma"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e321n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yruba"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.831373, 0.0117647, 0.890196, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_686fp"]
+
+[node name="TownCenter" type="Node2D"]
+position = Vector2(1, -1)
+script = ExtResource("1_bxb24")
+
+[node name="TownCenter" type="Sprite2D" parent="."]
+position = Vector2(959, 541)
+texture = ExtResource("1_h5cp1")
+
+[node name="Greg" type="Button" parent="."]
+offset_left = 809.0
+offset_top = 771.0
+offset_right = 889.0
+offset_bottom = 914.0
+theme = SubResource("Theme_cpcma")
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_e321n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yruba")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_686fp")

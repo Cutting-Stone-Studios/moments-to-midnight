@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://h7u1kloi5cuu"
+path="res://.godot/imported/day1.dialogue-8026b606055a4d1a77ae123582445611.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/eustace/day1.dialogue"
+dest_files=["res://.godot/imported/day1.dialogue-8026b606055a4d1a77ae123582445611.tres"]
+
+[params]
+
+defaults=true

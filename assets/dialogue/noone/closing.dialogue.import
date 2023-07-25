@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://cpqesss4nfd84"
+path="res://.godot/imported/closing.dialogue-416a4cb9465194da76cfdafed6f809e3.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/noone/closing.dialogue"
+dest_files=["res://.godot/imported/closing.dialogue-416a4cb9465194da76cfdafed6f809e3.tres"]
+
+[params]
+
+defaults=true
